@@ -1,2 +1,23 @@
 %h1 Be a Instacart Shopper!
-%p Apply Now!
+%p Submit the form below and Apply Now!
+
+%form{ :action => "application/new", :method => "post"}
+  %fieldset
+    %ol
+      %li
+        %label{:for => "name"} First Name:
+        %input{:type => "text", :name => "first_name", :class => "text"}
+      %li
+        %label{:for => "name"} Last Name:
+        %input{:type => "text", :name => "last_name", :class => "text"}
+      %li
+        %label{:for => "mail"} Email:
+        %input{:type => "text", :name => "email", :class => "text"}
+      %li
+        %label{:for => "name"} Phone Number:
+        %input{:type => "text", :name => "phone_number", :class => "number"}
+      %li
+        %label{:for => "name"} Region:
+        %input{:type => "text", :name => "location", :class => "text"}
+
+    %input{:type => "submit", :value => "Apply", :class => "button"}
